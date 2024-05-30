@@ -16,7 +16,6 @@ A simple and intuitive Tip Calculator application designed to help you quickly c
 - **HTML5:** For the structure of the app.
 - **CSS3:** For styling the app and making it visually appealing.
 - **JavaScript:** For the interactive functionality and calculations.
-- **CSS Grid/Flexbox:** For responsive layout management.
 
 ## Usage
 
