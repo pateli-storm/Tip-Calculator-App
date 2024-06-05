@@ -1,6 +1,6 @@
 # Tip-Calculator-App
 
-![alt](https://i.ibb.co/WgpcKmw/Screenshot-20240530-162909.png)
+![alt](https://i.ibb.co/h7NMCxB/Screenshot-20240605-163936.png)
 
 A simple and intuitive Tip Calculator application designed to help you quickly calculate tips and split bills among friends or family. This app is perfect for use in restaurants, cafes, and other dining establishments.
 

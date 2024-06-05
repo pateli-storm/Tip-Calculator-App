@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Splitter</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <div class="contianer">
@@ -14,20 +15,22 @@
           <div class="calculator-count">
             <div class="rachunek-div">
               <label for="rachunek">Rachunek</label>
-              <input type="number" id="rachunek" value="0" />
+              <input type="number" id="rachunek" value="0" class="inputRachunek"/>
+              <p class="error" id="pRachunekError"></p>
             </div>
             <div class="napiwek-div">
               <p class="napiwekP">Napiwek %</p>
-              <button id="btn5per" name="btnPercent">5 %</button>
-              <button id="btn10per" name="btnPercent">10 %</button>
-              <button id="btn15per" name="btnPercent">15 %</button>
-              <button id="btn25per" name="btnPercent">25 %</button>
-              <button id="btn50per" name="btnPercent">50 %</button>
+              <button id="btn5per" name="btnPercent" value="5">5 %</button>
+              <button id="btn10per" name="btnPercent" value="10">10 %</button>
+              <button id="btn15per" name="btnPercent" value="15">15 %</button>
+              <button id="btn25per" name="btnPercent" value="25">25 %</button>
+              <button id="btn50per" name="btnPercent" value="50">50 %</button>
               <input type="text" id="inpOwnPer" placeholder="Własny" name="btnPercent" />
             </div>
             <div class="osoby-div">
               <label for="osoby">Liczba osób</label>
-              <input type="number" id="osoby" value="0" />
+              <input type="number" id="osoby" value="0" class="inputRachunek"/>
+              <p class="error" id="pOsobyError"></p>
             </div>
           </div>
           <div class="calculator-info">
@@ -37,22 +40,24 @@
                   <h2>Napiwek</h2>
                   <p>/ osobę</p>
                 </div>
-                <h3 class="cenaH3">0.00 zł</h3>
+                <h3 class="cenaH3" id="cenaNapiwekOsoba">0.00 $</h3>
               </div>
               <div class="info-full">
                   <div class="info-text">
                     <h2>Razem</h2>
                     <p>/ osobę</p>
                   </div>
-                  <h3 class="cenaH3">0.00 zł</h3>
+                  <h3 class="cenaH3" id="cenaRazemOsoba">0.00 $</h3>
               </div>
             </div>
-            <button id="btnReset" disabled>Reset</button>
+            <div class="button-div">
+              <button class="btnInfo" id="btnOblicz">Oblicz</button>
+              <button class="btnInfo" id="btnReset" disabled >Reset</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    
     <script src="main.js"></script>
   </body>
 </html>
